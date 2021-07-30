@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".View.CreateExamActivity">
+
+    <EditText
+        android:id="@+id/examName"
+        android:layout_width="match_parent"
+        android:hint="Exam Name"
+        android:fontFamily="@font/didact_gothic"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittextdesign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:fontFamily="@font/didact_gothic"
+        android:gravity="center"
+        android:id="@+id/examCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittextdesign"
+        android:hint="Course name"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/examName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/QuestionsRecView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/examCourseName" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/addQuestionButton"
+        android:src="@drawable/add"
+        app:fabCustomSize="50dp"
+        android:backgroundTint="#F16695"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/createQuestionFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

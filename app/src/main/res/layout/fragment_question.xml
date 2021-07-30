@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/fragment_des"
+    tools:context=".Fragments.questionFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/didact_gothic"
+            android:text="New question"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:hint="Question"
+            android:id="@+id/questionCreate"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="5dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_marginTop="5dp"
+
+            />
+        <EditText
+            android:hint="Answer A."
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/answerA"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="5dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/didact_gothic"
+
+            android:layout_marginTop="5dp"
+
+            />
+        <EditText
+            android:hint="Answer B."
+            android:id="@+id/answerB"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="5dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:layout_marginTop="5dp"
+
+
+            />
+        <EditText
+            android:hint="Answer C."
+            android:id="@+id/answerC"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="5dp"
+
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/didact_gothic"
+
+            />
+        <EditText
+            android:hint="Answer D."
+            android:id="@+id/answerD"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="5dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/didact_gothic"
+
+            android:layout_marginTop="5dp"
+
+            />
+        <EditText
+            android:hint="Correct answer"
+            android:id="@+id/correctAnswer"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edittextdesign"
+            android:elevation="5dp"
+            android:paddingStart="10dp"
+
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/didact_gothic"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addThisQuestionButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_design"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:text="Add"
+            />
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
