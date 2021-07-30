@@ -83,6 +83,7 @@ public class StartExamActivity extends AppCompatActivity implements QuestionsAda
         examName = findViewById(R.id.startExamName);
         points = findViewById(R.id.startExamPoints);
         finish = findViewById(R.id.ButtonFinishTest);
+        examName.setText(getIntent().getStringExtra("examName"));
     }
 
     @Override
